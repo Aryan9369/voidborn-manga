@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="ogBg" cx="35%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#03030a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <polyline points="850,80 830,200 870,280 810,360 880,460 840,560" stroke="#7B61FF" stroke-width="3" fill="none" opacity="0.6"/>
+  <text x="80" y="280" font-family="serif" font-size="90" font-weight="bold" fill="white" letter-spacing="6">VOIDBORN</text>
+  <text x="80" y="340" font-family="sans-serif" font-size="26" fill="#b0b0c8">A Dark Fantasy Manga</text>
+  <text x="80" y="400" font-family="sans-serif" font-size="20" fill="#7B61FF" letter-spacing="2">NEW CHAPTERS EVERY FRIDAY</text>
+  <rect x="78" y="440" width="160" height="2" fill="#7B61FF"/>
+</svg>

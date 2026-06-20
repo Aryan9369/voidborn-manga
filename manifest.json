@@ -1,0 +1,42 @@
+{
+  "name": "VOIDBORN — Dark Fantasy Manga",
+  "short_name": "VOIDBORN",
+  "description": "A dark fantasy manga about a boy born with no shadow. New chapters every Friday.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#03030a",
+  "theme_color": "#03030a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "categories": ["entertainment", "books"],
+  "shortcuts": [
+    {
+      "name": "Read Latest Chapter",
+      "short_name": "Latest",
+      "description": "Jump straight to the newest chapter",
+      "url": "/chapters.html",
+      "icons": [{ "src": "assets/images/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "All Chapters",
+      "short_name": "Chapters",
+      "url": "/chapters.html"
+    }
+  ]
+}

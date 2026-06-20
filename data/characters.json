@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Kai Muro",
+    "role": "Protagonist",
+    "age": 12,
+    "importance": 5,
+    "tagline": "The one who hears them.",
+    "description": "Born during a Fracture event, Kai has lived his entire life without a shadow — a phenomenon no one in his village will explain. Quiet and observant, he's learned to notice what others ignore. When the Fracture begins to expand, Kai realizes his peculiarity isn't a defect. It's a door.",
+    "traits": ["Perceptive", "Stubborn", "Quietly Brave", "Emotionally Guarded"],
+    "abilities": ["Void Resonance", "Fracture Perception", "Shadow Absorption"],
+    "relationships": [
+      { "character": "Sera Vane", "type": "Reluctant Alliance" },
+      { "character": "The Elder", "type": "Parental Figure / Secret Keeper" }
+    ],
+    "avatar": "assets/images/char-kai.svg",
+    "firstAppearance": 1,
+    "color": "#7B61FF"
+  },
+  {
+    "id": 2,
+    "name": "Sera Vane",
+    "role": "Deuteragonist",
+    "age": 19,
+    "importance": 4,
+    "tagline": "Seven years hunting a myth. She found a boy.",
+    "description": "A former researcher for the now-dissolved Fracture Institute, Sera has spent three years tracking the only Shadowless in recorded history. Pragmatic to the point of cruelty, she struggles to see Kai as anything other than a variable — until the Sealed Ones make it personal.",
+    "traits": ["Analytical", "Morally Pragmatic", "Driven", "Haunted"],
+    "abilities": ["Void Theory Scholar", "Fracture Cartography", "Combat-Trained"],
+    "relationships": [
+      { "character": "Kai Muro", "type": "Reluctant Alliance" },
+      { "character": "Director Hael", "type": "Former Mentor / Antagonist" }
+    ],
+    "avatar": "assets/images/char-sera.svg",
+    "firstAppearance": 2,
+    "color": "#FF6B6B"
+  },
+  {
+    "id": 3,
+    "name": "The Elder",
+    "role": "Supporting",
+    "age": "Unknown (appears 70s)",
+    "importance": 3,
+    "tagline": "He's been waiting for the right lie to stop working.",
+    "description": "The village's oldest resident and Kai's de facto guardian. His warmth is genuine — and so is the secret he's kept for twelve years. The Elder knows more about the Fracture than any living person, because he was there when it first opened.",
+    "traits": ["Warm", "Deliberate", "Burdened", "Protective"],
+    "abilities": ["Void Lore", "Old-World Ritual Knowledge"],
+    "relationships": [
+      { "character": "Kai Muro", "type": "Guardian" },
+      { "character": "The Sealed Ones", "type": "Historical Pact" }
+    ],
+    "avatar": "assets/images/char-elder.svg",
+    "firstAppearance": 1,
+    "color": "#4ECDC4"
+  },
+  {
+    "id": 4,
+    "name": "Director Hael",
+    "role": "Antagonist",
+    "age": 52,
+    "importance": 3,
+    "tagline": "The man who decided the cost was acceptable.",
+    "description": "Former head of the Fracture Institute, Hael disbanded the organization publicly and continued its most dangerous experiments in private. He believes the Void can be weaponized — and that a Shadowless child is the key.",
+    "traits": ["Calculated", "Ideologically Certain", "Ruthless", "Believes in a Greater Good"],
+    "abilities": ["Fracture Manipulation (experimental)", "Institutional Authority", "Network of Agents"],
+    "relationships": [
+      { "character": "Sera Vane", "type": "Former Mentor / Antagonist" }
+    ],
+    "avatar": "assets/images/char-hael.svg",
+    "firstAppearance": 3,
+    "color": "#FF4757"
+  }
+]

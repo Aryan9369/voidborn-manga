@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found · VOIDBORN</title>
+  <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#03030a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 50% 60% at 50% 50%, rgba(123,97,255,0.07) 0%, transparent 70%),
+        var(--void);
+    }
+
+    .error-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(123,97,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123,97,255,0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .error-content { position: relative; z-index: 1; max-width: 520px; }
+
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 18vw, 10rem);
+      font-weight: 800;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(123,97,255,0.4);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.04em;
+      user-select: none;
+    }
+
+    .error-fracture {
+      display: block;
+      width: 2px;
+      height: 80px;
+      background: linear-gradient(to bottom, var(--fracture), transparent);
+      margin: 0 auto var(--space-6);
+      box-shadow: 0 0 12px rgba(123,97,255,0.5);
+    }
+
+    .error-title {
+      font-size: var(--text-2xl);
+      font-family: var(--font-display);
+      color: var(--ink-0);
+      margin-bottom: var(--space-3);
+    }
+
+    .error-desc {
+      color: var(--ink-3);
+      line-height: 1.7;
+      margin-bottom: var(--space-8);
+    }
+
+    .error-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
+
+    .error-mono {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--ink-4);
+      margin-top: var(--space-8);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-bg" aria-hidden="true"></div>
+    <div class="error-grid" aria-hidden="true"></div>
+
+    <div class="error-content">
+      <div class="error-code" aria-label="Error 404">404</div>
+      <span class="error-fracture" aria-hidden="true"></span>
+      <h1 class="error-title">Lost in the Void</h1>
+      <p class="error-desc">
+        This page has slipped through the Fracture. Whatever you were looking for — the Sealed Ones have it now.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">Return Home</a>
+        <a href="chapters.html" class="btn btn-outline">Browse Chapters</a>
+      </div>
+      <p class="error-mono">ERROR · PAGE_NOT_FOUND · VOIDBORN</p>
+    </div>
+  </div>
+
+  <script src="assets/js/core.js"></script>
+</body>
+</html>

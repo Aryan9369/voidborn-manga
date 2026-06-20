@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading — VOIDBORN</title>
+  <meta name="description" content="Read VOIDBORN manga online. Immersive reader with vertical scroll and page-by-page modes.">
+  <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/reader.css">
+</head>
+<body class="reader-body">
+
+  <!-- ── READING PROGRESS BAR ──────────────────────────── -->
+  <div id="reading-progress-bar" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+
+  <!-- ── TOP BAR ───────────────────────────────────────── -->
+  <header id="reader-topbar" aria-label="Reader controls">
+    <!-- Left: back + chapter info -->
+    <div class="topbar-left">
+      <a href="chapters.html" class="topbar-back" aria-label="Back to chapters">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        <span>Chapters</span>
+      </a>
+      <div class="topbar-divider" aria-hidden="true"></div>
+      <div class="topbar-chapter-info">
+        <div class="topbar-chapter-num">Chapter —</div>
+        <div class="topbar-chapter-title">Loading…</div>
+      </div>
+    </div>
+
+    <!-- Center: chapter selector -->
+    <div class="topbar-center">
+      <label for="chapter-selector" class="sr-only">Jump to chapter</label>
+      <select class="chapter-selector" id="chapter-selector" aria-label="Jump to chapter"></select>
+    </div>
+
+    <!-- Right: controls -->
+    <div class="topbar-right">
+      <!-- Zoom out -->
+      <button class="reader-btn" id="zoom-out-btn" aria-label="Zoom out" title="Zoom out (-)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+      </button>
+      <!-- Zoom label -->
+      <span class="reader-btn-text" id="zoom-label" aria-live="polite">100%</span>
+      <!-- Zoom in -->
+      <button class="reader-btn" id="zoom-in-btn" aria-label="Zoom in" title="Zoom in (+)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+      </button>
+      <!-- Mode toggle -->
+      <button class="reader-btn" id="mode-toggle-btn" aria-label="Toggle reading mode" title="Toggle reading mode (M)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+      </button>
+      <!-- Bookmark -->
+      <button class="reader-btn" id="bookmark-btn" aria-label="Bookmark this page" title="Bookmark (B)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      </button>
+      <!-- Share -->
+      <button class="reader-btn" id="share-btn" aria-label="Share chapter" title="Share">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      </button>
+      <!-- Fullscreen -->
+      <button class="reader-btn" id="fullscreen-btn" aria-label="Toggle fullscreen" title="Fullscreen (F)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+      </button>
+      <!-- Keyboard shortcuts help -->
+      <button class="reader-btn" id="shortcuts-btn" aria-label="Keyboard shortcuts" title="Shortcuts (?)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── READER CONTENT ─────────────────────────────────── -->
+  <main id="reader-content" class="mode-vertical" data-zoom="100" aria-label="Manga pages">
+    <!-- Pages injected by reader.js -->
+    <!-- Skeleton while loading -->
+    <div style="width:100%;max-width:800px;margin:0 auto;padding:20px 0">
+      <div class="skeleton" style="width:100%;aspect-ratio:2/3;border-radius:0"></div>
+    </div>
+
+    <!-- Chapter end card (moved into DOM by reader.js) -->
+    <div id="chapter-end" aria-label="End of chapter" style="display:none">
+      <div class="chapter-end-icon" aria-hidden="true">◈</div>
+      <h3>End of Chapter</h3>
+      <p>The fracture widens. Keep reading.</p>
+      <div class="chapter-end-actions">
+        <button id="next-chapter-btn-end" class="btn btn-primary">Next Chapter →</button>
+        <a href="chapters.html" class="btn btn-outline">All Chapters</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── BOTTOM BAR ────────────────────────────────────── -->
+  <footer id="reader-bottombar" aria-label="Chapter navigation">
+    <!-- Previous chapter -->
+    <button class="nav-chapter-btn" id="prev-chapter-btn" aria-label="Previous chapter">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Prev Ch.
+    </button>
+
+    <!-- Page navigation (page mode) + counter -->
+    <div style="display:flex;align-items:center;gap:var(--space-4)">
+      <div class="page-nav-btns">
+        <button class="page-nav-btn" id="prev-page-btn" aria-label="Previous page" disabled>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="page-counter" aria-live="polite">
+          <span id="page-counter">— / —</span>
+          <div class="page-counter-small">pages</div>
+        </div>
+        <button class="page-nav-btn" id="next-page-btn" aria-label="Next page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Next chapter -->
+    <button class="nav-chapter-btn" id="next-chapter-btn" aria-label="Next chapter">
+      Next Ch.
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+    </button>
+  </footer>
+
+  <!-- ── KEYBOARD SHORTCUTS OVERLAY ────────────────────── -->
+  <div id="shortcuts-overlay" class="hidden" role="dialog" aria-label="Keyboard shortcuts" aria-modal="true">
+    <div class="shortcuts-panel">
+      <h3>Keyboard Shortcuts</h3>
+      <div class="shortcut-row">
+        <span>Next page / scroll down</span>
+        <span class="shortcut-key"><span class="key">→</span> <span class="key">↓</span> <span class="key">D</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Previous page / scroll up</span>
+        <span class="shortcut-key"><span class="key">←</span> <span class="key">↑</span> <span class="key">A</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Toggle fullscreen</span>
+        <span class="shortcut-key"><span class="key">F</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Bookmark current page</span>
+        <span class="shortcut-key"><span class="key">B</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Toggle read mode</span>
+        <span class="shortcut-key"><span class="key">M</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Zoom in / out</span>
+        <span class="shortcut-key"><span class="key">+</span> <span class="key">-</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Show / hide shortcuts</span>
+        <span class="shortcut-key"><span class="key">?</span></span>
+      </div>
+      <div class="shortcut-row">
+        <span>Close overlay</span>
+        <span class="shortcut-key"><span class="key">Esc</span></span>
+      </div>
+      <button class="btn btn-outline btn-sm" style="margin-top:var(--space-5);width:100%" onclick="document.getElementById('shortcuts-overlay').classList.add('hidden')">Close</button>
+    </div>
+  </div>
+
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/reader.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>

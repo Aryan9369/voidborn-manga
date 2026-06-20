@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapters — VOIDBORN</title>
+  <meta name="description" content="Browse all VOIDBORN manga chapters. New chapter every Friday.">
+  <meta property="og:title" content="Chapters — VOIDBORN">
+  <meta property="og:description" content="Browse all VOIDBORN manga chapters.">
+  <meta property="og:image" content="assets/images/cover.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#03030a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/chapters.css">
+</head>
+<body>
+
+  <!-- ── ANNOUNCEMENT BANNER ─────────────────────────────── -->
+  <div id="announcement-banner" role="banner" aria-label="Site announcement">
+    <span class="banner-icon">◈</span>
+    <span id="banner-text">Loading…</span>
+    <button class="banner-close" aria-label="Dismiss">✕</button>
+  </div>
+
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">VOID<span class="logo-accent">BORN</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="chapters.html" class="nav-link">Chapters</a>
+        <a href="characters.html" class="nav-link">Characters</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="reader.html?chapter=chapter-1" class="nav-cta">Start Reading</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="chapters-hero" aria-labelledby="chapters-h1">
+      <div class="container">
+        <div class="label mb-2">The Archive</div>
+        <h1 id="chapters-h1">All Chapters</h1>
+        <p style="color:var(--ink-3);max-width:480px;margin-top:var(--space-3)">Every chapter, from the beginning. New installments drop every Friday.</p>
+      </div>
+    </section>
+
+    <!-- ── CHAPTER LIST ───────────────────────────────── -->
+    <section id="chapters-grid" aria-label="Chapter list">
+      <div class="container">
+
+        <!-- Controls -->
+        <div class="chapters-controls" role="toolbar" aria-label="Chapter list controls">
+          <div class="search-box" role="search">
+            <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <label for="chapter-search" class="sr-only">Search chapters</label>
+            <input class="search-input" type="search" id="chapter-search" placeholder="Search chapters…" aria-label="Search chapters" autocomplete="off">
+          </div>
+          <label for="chapter-sort" class="sr-only">Sort order</label>
+          <select class="sort-select" id="chapter-sort" aria-label="Sort chapters">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+          <span class="chapters-count" id="chapters-count" aria-live="polite"></span>
+        </div>
+
+        <!-- Random chapter button -->
+        <div class="random-btn-wrap">
+          <button id="random-chapter-btn" class="btn btn-ghost btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+            Random Chapter
+          </button>
+        </div>
+
+        <!-- Chapter List -->
+        <div id="chapters-list" role="list" aria-label="Chapters">
+          <!-- Skeletons -->
+          <div class="skeleton" style="height:120px;border-radius:12px;margin-bottom:16px"></div>
+          <div class="skeleton" style="height:120px;border-radius:12px;margin-bottom:16px"></div>
+          <div class="skeleton" style="height:120px;border-radius:12px"></div>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination" role="navigation" aria-label="Chapter pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>VOIDBORN</h3>
+          <p>A dark fantasy manga about a boy born with no shadow. Updated every Friday. Always free.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="chapters.html">All Chapters</a>
+          <a href="characters.html">Characters</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <a href="https://github.com/Aryan9369" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 VOIDBORN · by <a href="https://github.com/Aryan9369" style="color:var(--fracture)" target="_blank" rel="noopener noreferrer">Aryan</a></span>
+        <span>Updated every Friday</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/chapters.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>

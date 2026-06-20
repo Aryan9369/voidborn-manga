@@ -1,0 +1,64 @@
+{
+  "title": "VOIDBORN",
+  "tagline": "Between light and oblivion, one child holds the fracture shut.",
+  "synopsis": "In a world where the boundary between realms has begun to crack, a boy born with no shadow discovers he alone can hear the voices leaking through. Part cosmic horror, part coming-of-age — VOIDBORN is a manga about the weight of being chosen, and the cost of staying human.",
+  "genre": ["Dark Fantasy", "Cosmic Horror", "Psychological", "Shonen"],
+  "status": "Ongoing",
+  "updateSchedule": "Every Friday",
+  "nextChapterDate": "2026-06-26T00:00:00Z",
+  "author": {
+    "name": "Aryan",
+    "handle": "@aryan9369",
+    "bio": "Self-taught artist and storyteller from New Delhi. VOIDBORN began as a sketch in a college notebook and grew into something I couldn't stop thinking about. I update every Friday — no exceptions.",
+    "avatar": "assets/images/author-avatar.svg",
+    "links": {
+      "github": "https://github.com/Aryan9369",
+      "twitter": "https://twitter.com/",
+      "instagram": "https://instagram.com/"
+    }
+  },
+  "cover": "assets/images/cover.svg",
+  "bannerImage": "assets/images/hero-banner.svg",
+  "announcement": "Chapter 3 is now live — the fracture speaks for the first time.",
+  "seo": {
+    "description": "VOIDBORN — A dark fantasy manga about a boy born with no shadow, discovering he's the only barrier between worlds. New chapters every Friday.",
+    "keywords": "manga, dark fantasy, voidborn, webcomic, cosmic horror, free manga online",
+    "ogImage": "assets/images/og-image.svg"
+  },
+  "worldBuilding": [
+    {
+      "term": "The Fracture",
+      "definition": "A growing tear in the membrane separating the living world from the Void — first appeared 12 years ago, the night Kai was born."
+    },
+    {
+      "term": "Voidborn",
+      "definition": "Extremely rare individuals born during a Fracture event. They inherit the Void's resonance — and its hunger."
+    },
+    {
+      "term": "The Sealed Ones",
+      "definition": "Ancient entities that chose imprisonment over destruction. They whisper through the Fracture, patient and deliberate."
+    },
+    {
+      "term": "Shadowless",
+      "definition": "A Voidborn without a shadow — considered an omen. Kai is the only known Shadowless in recorded history."
+    }
+  ],
+  "faq": [
+    {
+      "q": "When does a new chapter release?",
+      "a": "Every Friday at midnight IST. Subscribe to the newsletter for release notifications."
+    },
+    {
+      "q": "Is VOIDBORN free to read?",
+      "a": "Yes, completely free — always. No paywalls, no premium tiers."
+    },
+    {
+      "q": "How many chapters are planned?",
+      "a": "The first arc is 24 chapters. Beyond that — the Void decides."
+    },
+    {
+      "q": "Can I share VOIDBORN with friends?",
+      "a": "Please do. Sharing is the only algorithm that works for indie creators."
+    }
+  ]
+}

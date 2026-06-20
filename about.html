@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — VOIDBORN</title>
+  <meta name="description" content="The story, world, and author behind VOIDBORN — a dark fantasy manga updated every Friday.">
+  <meta property="og:title" content="About VOIDBORN">
+  <meta property="og:description" content="Story overview, world-building lore, author notes and FAQ for VOIDBORN manga.">
+  <meta property="og:image" content="assets/images/cover.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#03030a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- ── ANNOUNCEMENT BANNER ─────────────────────────────── -->
+  <div id="announcement-banner" role="banner" aria-label="Site announcement">
+    <span class="banner-icon">◈</span>
+    <span id="banner-text">Loading…</span>
+    <button class="banner-close" aria-label="Dismiss">✕</button>
+  </div>
+
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">VOID<span class="logo-accent">BORN</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="chapters.html" class="nav-link">Chapters</a>
+        <a href="characters.html" class="nav-link">Characters</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="reader.html?chapter=chapter-1" class="nav-cta">Start Reading</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="about-hero" aria-labelledby="about-h1">
+      <div class="container">
+        <div class="label mb-2">The Story Behind the Story</div>
+        <h1 id="about-h1">About <span id="about-manga-title">VOIDBORN</span></h1>
+        <p style="color:var(--ink-3);max-width:520px;margin-top:var(--space-3)">
+          Everything you need to understand the world, the story, and why it exists.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── STORY OVERVIEW ────────────────────────────────── -->
+    <section id="story-overview" aria-labelledby="overview-h2">
+      <div class="container">
+        <div class="overview-grid">
+          <div>
+            <div class="overview-cover">
+              <img id="overview-cover" src="" alt="VOIDBORN cover" loading="lazy" width="300" height="420">
+            </div>
+          </div>
+          <div class="overview-text">
+            <div class="label mb-2">Story Overview</div>
+            <h2 id="overview-h2" id="overview-title">VOIDBORN</h2>
+
+            <!-- Meta chips -->
+            <div class="overview-meta">
+              <div class="meta-item">
+                <span class="meta-item-label">Status</span>
+                <span class="meta-item-value" id="meta-status">—</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-item-label">Schedule</span>
+                <span class="meta-item-value" id="meta-schedule">—</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-item-label">Chapters</span>
+                <span class="meta-item-value" id="meta-chapters">—</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-item-label">Total Pages</span>
+                <span class="meta-item-value" id="meta-pages">—</span>
+              </div>
+            </div>
+
+            <p class="overview-synopsis" id="overview-synopsis">Loading…</p>
+
+            <!-- Genre tags -->
+            <div class="label mb-2">Genres</div>
+            <div class="genre-tags" id="genre-tags">
+              <!-- Populated by about.js -->
+            </div>
+
+            <div style="margin-top:var(--space-8);display:flex;gap:var(--space-4);flex-wrap:wrap">
+              <a href="reader.html?chapter=chapter-1" class="btn btn-primary">Start Reading</a>
+              <a href="chapters.html" class="btn btn-outline">Browse Chapters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── WORLD BUILDING ────────────────────────────────── -->
+    <section id="world-building" aria-labelledby="world-h2">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="label mb-2">Lore & Terminology</div>
+            <h2 id="world-h2">World-Building</h2>
+          </div>
+        </div>
+        <div class="world-grid" id="world-grid">
+          <!-- Populated by about.js -->
+          <div class="skeleton" style="height:100px;border-radius:12px"></div>
+          <div class="skeleton" style="height:100px;border-radius:12px"></div>
+          <div class="skeleton" style="height:100px;border-radius:12px"></div>
+          <div class="skeleton" style="height:100px;border-radius:12px"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── AUTHOR NOTES ───────────────────────────────────── -->
+    <section id="author-notes" aria-labelledby="notes-h2">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="label mb-2">From the Creator</div>
+            <h2 id="notes-h2">Author Notes</h2>
+          </div>
+        </div>
+        <div class="author-note-card">
+          <div class="author-note-avatar">
+            <img id="note-author-avatar" src="" alt="" loading="lazy" width="80" height="80">
+          </div>
+          <div>
+            <div class="author-note-name" id="note-author-name">—</div>
+            <div class="author-note-handle" id="note-author-handle">—</div>
+            <blockquote class="author-note-text" id="note-author-bio">Loading…</blockquote>
+            <div style="margin-top:var(--space-5)">
+              <a href="https://github.com/Aryan9369" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                Follow on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────────── -->
+    <section id="faq-section" aria-labelledby="faq-h2">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:var(--space-6)">
+          <div>
+            <div class="label mb-2">Common Questions</div>
+            <h2 id="faq-h2">FAQ</h2>
+          </div>
+        </div>
+        <div class="faq-list" id="faq-list" role="list">
+          <!-- Populated by about.js -->
+          <div class="skeleton" style="height:56px;border-radius:8px;margin-bottom:8px"></div>
+          <div class="skeleton" style="height:56px;border-radius:8px;margin-bottom:8px"></div>
+          <div class="skeleton" style="height:56px;border-radius:8px"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>VOIDBORN</h3>
+          <p>A dark fantasy manga about a boy born with no shadow. Updated every Friday. Always free.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="chapters.html">All Chapters</a>
+          <a href="characters.html">Characters</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <a href="https://github.com/Aryan9369" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 VOIDBORN · by <a href="https://github.com/Aryan9369" style="color:var(--fracture)" target="_blank" rel="noopener noreferrer">Aryan</a></span>
+        <span>Updated every Friday</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/about.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>

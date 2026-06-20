@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="60" fill="#1a1a2e"/>
+  <circle cx="60" cy="50" r="24" fill="#2e2e4e"/>
+  <ellipse cx="60" cy="95" rx="32" ry="26" fill="#2e2e4e"/>
+  <circle cx="60" cy="60" r="60" fill="none" stroke="#7B61FF" stroke-width="2"/>
+  <text x="60" y="57" text-anchor="middle" font-family="serif" font-size="22" fill="#7B61FF" font-weight="bold">A</text>
+</svg>

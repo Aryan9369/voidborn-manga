@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOIDBORN — A Dark Fantasy Manga</title>
+  <meta name="description" content="VOIDBORN — A dark fantasy manga about a boy born with no shadow, discovering he's the only barrier between worlds. New chapters every Friday.">
+  <meta name="keywords" content="manga, dark fantasy, voidborn, webcomic, cosmic horror, free manga online">
+  <meta name="author" content="Aryan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VOIDBORN — A Dark Fantasy Manga">
+  <meta property="og:description" content="Between light and oblivion, one child holds the fracture shut. New chapters every Friday.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aryan9369.github.io/voidborn/">
+  <meta property="og:image" content="assets/images/cover.svg">
+  <meta property="og:site_name" content="VOIDBORN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VOIDBORN — A Dark Fantasy Manga">
+  <meta name="twitter:description" content="Between light and oblivion, one child holds the fracture shut.">
+  <meta name="twitter:image" content="assets/images/cover.svg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aryan9369.github.io/voidborn/">
+
+  <!-- PWA -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon-192.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#03030a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VOIDBORN">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <!-- Scroll animations -->
+  <style>
+    [data-observe] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out); }
+    [data-observe].in-view { opacity: 1; transform: none; }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VOIDBORN",
+    "url": "https://aryan9369.github.io/voidborn/",
+    "description": "A dark fantasy manga about a boy born with no shadow.",
+    "author": { "@type": "Person", "name": "Aryan" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── ANNOUNCEMENT BANNER ─────────────────────────────── -->
+  <div id="announcement-banner" role="banner" aria-label="Site announcement">
+    <span class="banner-icon">◈</span>
+    <span id="banner-text">Loading latest update…</span>
+    <button class="banner-close" aria-label="Dismiss announcement">✕</button>
+  </div>
+
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VOIDBORN home">
+        VOID<span class="logo-accent">BORN</span>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" class="nav-link" role="menuitem">Home</a>
+        <a href="chapters.html" class="nav-link" role="menuitem">Chapters</a>
+        <a href="characters.html" class="nav-link" role="menuitem">Characters</a>
+        <a href="about.html" class="nav-link" role="menuitem">About</a>
+        <a href="reader.html?chapter=chapter-1" class="nav-cta" role="menuitem">Start Reading</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="hero" aria-label="Featured manga">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <div class="hero-eyebrow-dot" aria-hidden="true"></div>
+            <span class="label">Dark Fantasy Manga</span>
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            VOID<span class="title-accent">BORN</span>
+          </h1>
+          <p class="hero-tagline" id="hero-tagline">Loading…</p>
+          <p class="hero-synopsis" id="hero-synopsis"></p>
+          <div class="hero-actions">
+            <a href="reader.html?chapter=chapter-1" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Start Reading
+            </a>
+            <a href="chapters.html" class="btn btn-outline btn-lg">All Chapters</a>
+          </div>
+          <div class="hero-stats" id="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-value stat-chapters">—</div>
+              <div class="hero-stat-label">Chapters</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value stat-pages">—</div>
+              <div class="hero-stat-label">Pages</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value stat-streak">—</div>
+              <div class="hero-stat-label">Day Streak</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="cover-container">
+            <div class="cover-glow"></div>
+            <div class="cover-book">
+              <img id="hero-cover" src="" alt="" width="280" height="392" style="width:100%;height:auto;display:block;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LATEST CHAPTER BANNER ──────────────────────── -->
+    <section id="latest-chapter-banner" aria-label="Latest chapter">
+      <div class="container banner-inner">
+        <div class="banner-left">
+          <div>
+            <div class="banner-chapter-num" id="banner-latest-num">Chapter —</div>
+            <div class="banner-chapter-title" id="banner-latest-title">Loading…</div>
+          </div>
+          <div class="banner-divider" aria-hidden="true"></div>
+          <span class="badge badge-new">Now Live</span>
+        </div>
+        <a href="#" id="banner-latest-link" class="btn btn-primary">Read Now →</a>
+      </div>
+    </section>
+
+    <!-- ── COUNTDOWN ──────────────────────────────────── -->
+    <section id="countdown-section" aria-label="Next chapter countdown">
+      <div class="container">
+        <div class="countdown-label-top label">Next Chapter Releases In</div>
+        <div class="countdown-inner">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-days">00</span>
+            <div class="countdown-sublabel">Days</div>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <div class="countdown-sublabel">Hours</div>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-mins">00</span>
+            <div class="countdown-sublabel">Minutes</div>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-secs">00</span>
+            <div class="countdown-sublabel">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTINUE READING ────────────────────────────── -->
+    <section id="continue-reading" style="display:none" aria-label="Continue reading">
+      <div class="container">
+        <div class="section-header" data-observe>
+          <div>
+            <div class="label">Pick up where you left off</div>
+            <h2>Continue Reading</h2>
+          </div>
+        </div>
+        <div class="continue-card" data-observe>
+          <div class="continue-thumb">
+            <img id="continue-thumb" src="" alt="" loading="lazy" width="80" height="112">
+          </div>
+          <div class="continue-info">
+            <div class="continue-chapter" id="continue-chapter-num"></div>
+            <div class="continue-title" id="continue-chapter-title"></div>
+            <div class="continue-progress">
+              <div class="progress-track">
+                <div class="progress-fill" id="continue-progress-fill" style="width:0%"></div>
+              </div>
+              <div class="progress-label" id="continue-progress-label"></div>
+            </div>
+          </div>
+          <a href="#" id="continue-btn" class="btn btn-primary">Continue →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RECENT UPDATES ─────────────────────────────── -->
+    <section id="recent-updates" aria-label="Recent chapter updates">
+      <div class="container">
+        <div class="section-header" data-observe>
+          <div>
+            <div class="label">Fresh from the Void</div>
+            <h2>Recent Updates</h2>
+          </div>
+          <a href="chapters.html" class="btn btn-ghost">View all →</a>
+        </div>
+        <div id="recent-chapters-list" role="list" data-observe>
+          <!-- Populated by home.js -->
+          <div class="skeleton" style="height:100px;border-radius:12px;margin-bottom:16px"></div>
+          <div class="skeleton" style="height:100px;border-radius:12px;margin-bottom:16px"></div>
+          <div class="skeleton" style="height:100px;border-radius:12px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CHARACTER SHOWCASE ─────────────────────────── -->
+    <section id="character-showcase" aria-label="Characters">
+      <div class="container">
+        <div class="section-header" data-observe>
+          <div>
+            <div class="label">The Cast</div>
+            <h2>Characters</h2>
+          </div>
+          <a href="characters.html" class="btn btn-ghost">Full profiles →</a>
+        </div>
+        <div id="char-showcase-grid" class="char-showcase-grid" data-observe>
+          <!-- Populated by home.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT CREATOR ──────────────────────────────── -->
+    <section id="about-creator" aria-label="About the creator">
+      <div class="container">
+        <div class="creator-inner" data-observe>
+          <div class="creator-avatar-wrap">
+            <div class="creator-avatar">
+              <img id="author-avatar" src="" alt="" width="140" height="140" loading="lazy">
+            </div>
+          </div>
+          <div class="creator-text">
+            <div class="creator-handle" id="author-handle"></div>
+            <h2 class="creator-name" id="author-name"></h2>
+            <p class="creator-bio" id="author-bio"></p>
+            <div class="footer-social">
+              <a href="#" id="author-github" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" id="author-twitter" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" id="author-instagram" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NEWSLETTER ─────────────────────────────────── -->
+    <section id="newsletter" aria-label="Newsletter signup">
+      <div class="container">
+        <div class="newsletter-box" data-observe>
+          <div class="label mb-2">Stay in the loop</div>
+          <h2>Every Friday. No exceptions.</h2>
+          <p>New chapters drop every Friday at midnight. Get notified the moment VOIDBORN updates — and nothing else.</p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input class="newsletter-input" type="email" id="newsletter-email" placeholder="your@email.com" autocomplete="email" required>
+            <button type="submit" class="btn btn-primary">Notify Me</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RANDOM CHAPTER ─────────────────────────────── -->
+    <section style="padding:var(--space-8) 0;text-align:center" aria-label="Feeling adventurous">
+      <div class="container">
+        <p class="text-muted" style="font-size:var(--text-sm);margin-bottom:var(--space-3)">Feeling adventurous?</p>
+        <button id="random-chapter-btn" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+          Jump to a Random Chapter
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>VOIDBORN</h3>
+          <p>A dark fantasy manga about a boy born with no shadow. Updated every Friday. Always free.</p>
+          <div class="footer-social" style="margin-top:var(--space-5)">
+            <a href="https://github.com/Aryan9369" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="chapters.html">All Chapters</a>
+          <a href="characters.html">Characters</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Read</h4>
+          <a href="reader.html?chapter=chapter-1">Chapter 1</a>
+          <a href="reader.html?chapter=chapter-2">Chapter 2</a>
+          <a href="reader.html?chapter=chapter-3">Chapter 3</a>
+          <a href="chapters.html">All Chapters →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 VOIDBORN · Made with obsession by <a href="https://github.com/Aryan9369" style="color:var(--fracture)" target="_blank" rel="noopener noreferrer">Aryan</a></span>
+        <span>Updated every Friday · Free forever</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/home.js"></script>
+
+  <!-- PWA Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

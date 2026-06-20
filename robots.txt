@@ -1,0 +1,11 @@
+# VOIDBORN — robots.txt
+# Allow all crawlers full access to the public site.
+
+User-agent: *
+Allow: /
+
+# Disallow indexing of the immersive reader query-param variants
+# (canonical chapter content is better discovered via /chapters.html)
+Disallow: /reader.html
+
+Sitemap: https://aryan9369.github.io/voidborn/sitemap.xml

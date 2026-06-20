@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "number": 1,
+    "title": "The Boy Without a Shadow",
+    "slug": "chapter-1",
+    "releaseDate": "2026-05-30T00:00:00Z",
+    "pages": 28,
+    "coverImage": "chapters/chapter-1/cover.svg",
+    "synopsis": "Twelve-year-old Kai Muro has never cast a shadow. In a small mountain town preparing for the Void Festival, something begins to stir beneath the cobblestones.",
+    "tags": ["Introduction", "Origin", "Kai"],
+    "isNew": false,
+    "isFeatured": true,
+    "pageImages": [
+      "chapters/chapter-1/page-001.svg",
+      "chapters/chapter-1/page-002.svg",
+      "chapters/chapter-1/page-003.svg",
+      "chapters/chapter-1/page-004.svg",
+      "chapters/chapter-1/page-005.svg"
+    ]
+  },
+  {
+    "id": 2,
+    "number": 2,
+    "title": "Voices Through the Wall",
+    "slug": "chapter-2",
+    "releaseDate": "2026-06-06T00:00:00Z",
+    "pages": 31,
+    "coverImage": "chapters/chapter-2/cover.svg",
+    "synopsis": "The night the Fracture expands, Kai hears a voice that knows his name. A stranger arrives at dawn — and she's been looking for him for three years.",
+    "tags": ["The Fracture", "Sera", "First Contact"],
+    "isNew": false,
+    "isFeatured": false,
+    "pageImages": [
+      "chapters/chapter-2/page-001.svg",
+      "chapters/chapter-2/page-002.svg",
+      "chapters/chapter-2/page-003.svg",
+      "chapters/chapter-2/page-004.svg",
+      "chapters/chapter-2/page-005.svg"
+    ]
+  },
+  {
+    "id": 3,
+    "number": 3,
+    "title": "What the Fracture Remembers",
+    "slug": "chapter-3",
+    "releaseDate": "2026-06-13T00:00:00Z",
+    "pages": 34,
+    "coverImage": "chapters/chapter-3/cover.svg",
+    "synopsis": "Sera reveals the true history of the Voidborn — and why everyone before Kai chose not to survive the knowledge. The Sealed Ones begin to wake.",
+    "tags": ["Lore", "Revelation", "The Sealed Ones"],
+    "isNew": true,
+    "isFeatured": false,
+    "pageImages": [
+      "chapters/chapter-3/page-001.svg",
+      "chapters/chapter-3/page-002.svg",
+      "chapters/chapter-3/page-003.svg",
+      "chapters/chapter-3/page-004.svg",
+      "chapters/chapter-3/page-005.svg"
+    ]
+  }
+]
