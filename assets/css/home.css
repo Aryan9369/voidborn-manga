@@ -40,6 +40,19 @@
   padding: var(--space-24) 0;
 }
 
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+    padding: var(--space-16) 0;
+    text-align: center;
+  }
+  .hero-text { max-width: 100%; margin: 0 auto; }
+  .hero-actions { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-visual { order: -1; }
+}
+
 .hero-text { max-width: 580px; }
 
 .hero-eyebrow {
@@ -136,6 +149,7 @@
 .cover-container {
   position: relative;
   width: 280px;
+  max-width: 70vw;
   flex-shrink: 0;
 }
 
@@ -151,7 +165,7 @@
 .cover-book {
   position: relative;
   z-index: 1;
-  width: 280px;
+  width: 100%;
   border-radius: 4px 12px 12px 4px;
   box-shadow:
     -8px 8px 24px rgba(0,0,0,0.8),

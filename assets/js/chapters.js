@@ -6,8 +6,24 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const { fetchData, storage, favorites, favorites: favs, timeAgo, estimateReadTime, toast } = window.VB;
 
-  const [chapters] = await Promise.all([fetchData('data/chapters.json')]);
+  const [chapters, manga] = await Promise.all([
+    fetchData('data/chapters.json'),
+    fetchData('data/manga.json')
+  ]);
   if (!chapters) return;
+
+  // ── MANGA IDENTITY (title, cover, tagline) ──────────────
+  if (manga) {
+    document.title = `Chapters — ${manga.title}`;
+
+    const nameEl = document.getElementById('manga-name-title');
+    const coverEl = document.getElementById('manga-mini-cover');
+    const taglineEl = document.getElementById('manga-mini-tagline');
+
+    if (nameEl) nameEl.textContent = manga.title;
+    if (coverEl) { coverEl.src = manga.cover; coverEl.alt = `${manga.title} cover`; }
+    if (taglineEl) taglineEl.textContent = manga.tagline;
+  }
 
   let filtered = [...chapters];
   let sortOrder = 'newest';
