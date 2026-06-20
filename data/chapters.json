@@ -2,21 +2,42 @@
   {
     "id": 1,
     "number": 1,
-    "title": "The Boy Without a Shadow",
+    "title": "Sasuke & Sakura: After the War",
     "slug": "chapter-1",
-    "releaseDate": "2026-05-30T00:00:00Z",
-    "pages": 28,
-    "coverImage": "chapters/chapter-1/cover.svg",
-    "synopsis": "Twelve-year-old Kai Muro has never cast a shadow. In a small mountain town preparing for the Void Festival, something begins to stir beneath the cobblestones.",
-    "tags": ["Introduction", "Origin", "Kai"],
+    "releaseDate": "2026-06-20T00:00:00Z",
+    "pages": 9,
+    "coverImage": "chapters/chapter-1/cover.jpg",
+    "synopsis": "As peace returns to Konoha, Sasuke chooses to leave the village in search of redemption. At the village gate, Sakura shares an emotional farewell and asks him not to disappear from her life again. Touched by her words, Sasuke departs carrying both her gift and a promise for the future.",
+    "tags": [
+      "Introduction",
+      "Romance",
+      "Drama",
+      "Emotional",
+      "SasuSaku",
+      "Post-War",
+      "Naruto",
+      "Fanfiction",
+      "Character Development",
+      "Adventure",
+      "Slice of Life",
+      "Slow Burn",
+      "Friendship",
+      "Redemption",
+      "Journey",
+      "Love Story"
+    ],
     "isNew": false,
     "isFeatured": true,
     "pageImages": [
-      "chapters/chapter-1/page-001.svg",
-      "chapters/chapter-1/page-002.svg",
-      "chapters/chapter-1/page-003.svg",
-      "chapters/chapter-1/page-004.svg",
-      "chapters/chapter-1/page-005.svg"
+      "chapters/chapter-1/page-001.jpg",
+      "chapters/chapter-1/page-002.jpg",
+      "chapters/chapter-1/page-003.jpg",
+      "chapters/chapter-1/page-004.jpg",
+      "chapters/chapter-1/page-005.jpg",
+      "chapters/chapter-1/page-006.jpg",
+      "chapters/chapter-1/page-007.jpg",
+      "chapters/chapter-1/page-008.jpg",
+      "chapters/chapter-1/page-009.jpeg"
     ]
   },
   {
@@ -28,7 +49,11 @@
     "pages": 31,
     "coverImage": "chapters/chapter-2/cover.svg",
     "synopsis": "The night the Fracture expands, Kai hears a voice that knows his name. A stranger arrives at dawn — and she's been looking for him for three years.",
-    "tags": ["The Fracture", "Sera", "First Contact"],
+    "tags": [
+      "The Fracture",
+      "Sera",
+      "First Contact"
+    ],
     "isNew": false,
     "isFeatured": false,
     "pageImages": [
@@ -48,7 +73,11 @@
     "pages": 34,
     "coverImage": "chapters/chapter-3/cover.svg",
     "synopsis": "Sera reveals the true history of the Voidborn — and why everyone before Kai chose not to survive the knowledge. The Sealed Ones begin to wake.",
-    "tags": ["Lore", "Revelation", "The Sealed Ones"],
+    "tags": [
+      "Lore",
+      "Revelation",
+      "The Sealed Ones"
+    ],
     "isNew": true,
     "isFeatured": false,
     "pageImages": [
