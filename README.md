@@ -87,7 +87,7 @@ python3 -m http.server 8000
 
 1. Push this repo to GitHub.
 2. Repo Settings → Pages → Source: `main` branch, `/ (root)`.
-3. Update the canonical URLs in `index.html`, `sitemap.xml`, and `robots.txt` to match your actual GitHub Pages URL if different from `https://aryan9369.github.io/voidborn/`.
+3. Update the canonical URLs in `index.html`, `sitemap.xml`, and `robots.txt` to match your actual GitHub Pages URL if different from `https://YOURUSERNAME.github.io/YOURREPO/`.
 
 ## ✅ Features Implemented
 

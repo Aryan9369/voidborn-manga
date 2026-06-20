@@ -8,4 +8,4 @@ Allow: /
 # (canonical chapter content is better discovered via /chapters.html)
 Disallow: /reader.html
 
-Sitemap: https://aryan9369.github.io/voidborn/sitemap.xml
+Sitemap: https://YOURUSERNAME.github.io/YOURREPO/sitemap.xml

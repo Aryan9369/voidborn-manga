@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://aryan9369.github.io/voidborn/</loc>
+    <loc>https://YOURUSERNAME.github.io/YOURREPO/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://aryan9369.github.io/voidborn/chapters.html</loc>
+    <loc>https://YOURUSERNAME.github.io/YOURREPO/chapters.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://aryan9369.github.io/voidborn/characters.html</loc>
+    <loc>https://YOURUSERNAME.github.io/YOURREPO/characters.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://aryan9369.github.io/voidborn/about.html</loc>
+    <loc>https://YOURUSERNAME.github.io/YOURREPO/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
